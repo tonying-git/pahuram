@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Loan Tracker Table</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+  <header>
+    <h1>Loan Tracker</h1>
+    <img src="logo.png" alt="Logo">
+  </header>
+  <div class="container">
+      <form id="loanForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="number" id="releasedAmount" placeholder="Loan Amount" required>
+    <input type="date" id="releaseDate" required>
+    <input type="number" id="interest" placeholder="Interest Rate (%)" required>
+    <input type="number" id="months" placeholder="Months to Pay" required>
+    <button type="submit">Add Loan</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Released Date</th>
+        <th>Loan Amount</th>
+        <th>Monthly Interest</th>
+        <th>Months to Pay</th>
+        <th>Status</th>
+        <th>Balance</th>
+        <th>Date Paid</th>
+        <th>Payments</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="loanTableBody"></tbody>
+  </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
